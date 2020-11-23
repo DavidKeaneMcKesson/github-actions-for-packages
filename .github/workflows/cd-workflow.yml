@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - "**Dockerfile**"
+  pull_request:
+    branches: [ main ]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
